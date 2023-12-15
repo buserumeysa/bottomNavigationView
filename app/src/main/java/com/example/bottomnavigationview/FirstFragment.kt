@@ -9,7 +9,8 @@ import androidx.fragment.app.Fragment
 import com.example.bottomnavigationview.databinding.FragmentFirstBinding
 
 
-class FirstFragment(private val title: String, private val iconRes: Int) : Fragment() {
+class FirstFragment : Fragment() {
+    //private val title: String, private val iconRes: Int
 
     private lateinit var binding: FragmentFirstBinding
 
@@ -21,31 +22,4 @@ class FirstFragment(private val title: String, private val iconRes: Int) : Fragm
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-//
-      // Fragment içeriğini güncelleme
-        binding.textView.text = title
-        binding.fragmentIcon.setImageResource(iconRes)
-
-        // Fragment renk özelleştirmeleri
-        binding.firsttFragment.setBackgroundColor(requireContext().getColor(R.color.background_color)) //
-        // Fragment seçildiğinde ve seçilmediğinde renk değiştirme
-        val selectedColor = requireContext().getColor(R.color.selected_color)
-        val unselectedColor = requireContext().getColor(R.color.unselected_color)
-
-        binding.firsttFragment.setOnClickListener {
-            // Fragment'a tıklanıldığında renk değişimi
-            if (isSelected()) {
-                binding.root.setBackgroundColor(unselectedColor)
-            } else {
-                binding.root.setBackgroundColor(selectedColor)
-            }
-        }
-  }
-
-    private fun isSelected(): Boolean {
-
-        return false
-    }
 }

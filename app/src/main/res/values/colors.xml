@@ -3,6 +3,9 @@
 
     <color name="background_color">#3EC2FD</color>
     <color name="selected_color">#FF5733</color>
+    <color name="selected_color2">#00E2FF</color>
+    <color name="selected_color3">#FF0084</color>
+    <color name="selected_color4">#2EFF00</color>
     <color name="unselected_color">#F0F0F0</color>
 
     <color name="black">#FF000000</color>
