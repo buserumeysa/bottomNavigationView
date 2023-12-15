@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="First Fragment"
+        android:icon="@drawable/baseline_audiotrack_24"
+        android:id="@+id/firsttFragment"
+        />
+    <item
+        android:title="Second Fragment"
+        android:icon="@drawable/baseline_calendar_month_24"
+        android:id="@+id/secondFragment" />
+    <item
+        android:title="Third Fragment"
+        android:icon="@drawable/baseline_camera_24"
+        android:id="@+id/thirdFragment" />
+    <item
+        android:title="Fourth Fragment"
+        android:icon="@drawable/baseline_attach_email_24"
+        android:id="@+id/fourthFragment" />
+</menu>
